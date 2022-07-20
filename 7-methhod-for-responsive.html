@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>7 Method Apply of Responsive Website</title>
+    <style>
+        body {
+            max-width: 1200px;
+            margin: 0 auto;
+            border: 2px solid plum;
+        }
+        
+        h1 {
+            font-size: 50px;
+            /* font-size: 10vw; */
+            font-weight: 700;
+        }
+        
+        .tiger img {
+            width: 100%;
+        }
+        
+        .container-tow {
+            display: flex;
+        }
+        
+        .split {
+            width: 50%;
+        }
+        /* Make Responsive Image Inside */
+        
+        .split img {
+            width: 100%;
+        }
+        
+        .container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 10px;
+        }
+        
+        .food {
+            border: 2px solid lightseagreen;
+            border-radius: 10px;
+            padding: 12px;
+        }
+        
+        .food img {
+            width: 100%;
+        }
+        
+        @media screen and ( max-width: 576px) {
+            .container-tow {
+                /* flex-direction: column; */
+                flex-direction: column-reverse;
+            }
+            .split {
+                width: 100%;
+            }
+            .container {
+                display: grid;
+                grid-template-columns: repeat(1, 1fr);
+            }
+        }
+        
+        @media screen and (min-width: 577px) and (max-width: 992px) {
+            .container {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 
+    1.view Port Meta tag.
+    2.CSS Relative Unite.
+    3.Responsive Imgae(Fluate)
+    4.Body Max With & Margine Auto
+    5.Tow Part Split Responsive
+    6. Multi colum  using grid and media query
+    7.Resonsive Menu
+ -->
+
+
+    <h1>
+        My Responsive Website
+    </h1>
+
+    <section class="tiger">
+        <h3>Tiger</h3>
+        <img src="images/tiger.jpg" alt="">
+    </section>
+
+    <section>
+        <h2>Split 2 part</h2>
+        <div class="container-tow">
+            <div class="split">
+
+                <h4>header-1</h4>
+                <img src="images/healthy-food-png-pic.png" alt="">
+            </div>
+            <div class="split">
+
+                <h4>header-2</h4>
+                <img src="images/tiger.jpg" alt="">
+            </div>
+        </div>
+    </section>
+    <section class="multi-columns">
+        <div class="container">
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-1</h2>
+                <h3>Price:100</h3>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos vitae impedit, provident enim voluptas a ipsam veniam tempore eligendi in ab, asperiores dolore ipsum tempora! Magnam fuga laborum rerum adipisci eligendi, consequuntur fugiat
+                    voluptatum dolorum unde neque qui quasi doloribus.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-2</h2>
+                <h3>Price:200</h3>
+                <p>Iste saepe asperiores harum dolorem numquam ullam dicta, at ipsum omnis minus in assumenda alias eum. Commodi at eaque quasi dolor nemo nostrum accusamus animi provident maiores, labore neque dolore tempore fuga ipsa architecto dolorum
+                    blanditiis ratione, excepturi inventore nobis.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-3</h2>
+                <h3>Price:300</h3>
+                <p>Nobis velit aliquid dolorem officia, enim id nihil excepturi! Ullam ipsum aliquam, similique rem quaerat consequatur sunt optio culpa eveniet. Corrupti, corporis alias. Dolor qui, eveniet officia, aut laudantium eos, asperiores dolores
+                    itaque velit officiis maiores mollitia nesciunt! Ea, deleniti.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-4</h2>
+                <h3>Price:400</h3>
+                <p>Error quas iste atque, consectetur natus, doloremque reiciendis tempore, ducimus aut iusto eligendi blanditiis ratione quasi? Error sed, velit expedita nesciunt obcaecati maxime eaque repellendus ab eum, quas incidunt id! Provident excepturi
+                    necessitatibus autem, voluptatibus accusantium explicabo rerum quidem porro.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-5</h2>
+                <h3>Price:500</h3>
+                <p>Magnam, similique! Odit nihil quaerat ipsa veritatis praesentium eos soluta nam vero aspernatur dignissimos adipisci, dolorum consequuntur ratione fuga dolorem saepe a molestiae. Officia culpa eos similique aspernatur quibusdam incidunt
+                    id maxime provident, quisquam natus soluta, asperiores eaque voluptate corporis!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-6</h2>
+                <h3>Price:600</h3>
+                <p>Vel, nesciunt optio. Ratione cum unde amet dolore, quaerat neque ipsam, eveniet beatae reprehenderit consectetur qui, harum doloribus voluptas culpa voluptatibus architecto quis odio magni illo voluptatum. Eligendi illum, recusandae ratione
+                    sint earum illo omnis, esse, praesentium quisquam vero id!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-7</h2>
+                <h3>Price:700</h3>
+                <p>Ipsum praesentium nesciunt cum, dolore provident magni sapiente nulla vitae autem quia nostrum enim! Facilis esse nihil voluptas facere, omnis ex similique quos quam totam provident earum? Accusantium excepturi sunt nisi dolore inventore
+                    amet esse rerum soluta ipsa! Repellat, explicabo?</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-8</h2>
+                <h3>Price:800</h3>
+                <p>Temporibus possimus ut, ullam nostrum nobis laborum ex, id reprehenderit eveniet explicabo debitis dicta. Voluptas ea sapiente quisquam maiores. Tempora nemo magnam perspiciatis molestias excepturi esse voluptates aut doloremque doloribus
+                    incidunt velit dolorem animi voluptas, saepe rem est alias consequatur.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-9</h2>
+                <h3>Price:900</h3>
+                <p>Deserunt similique esse sint est a laboriosam eveniet blanditiis explicabo? Consequatur nesciunt incidunt, vitae quis excepturi nisi sapiente possimus illo cupiditate unde deleniti eius corrupti ratione. Commodi accusamus fuga, sed laboriosam
+                    reprehenderit voluptas repellendus! Beatae quasi harum doloremque ex possimus.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-10</h2>
+                <h3>Price:1000</h3>
+                <p>Laborum magni quaerat at perferendis quidem animi minima, aliquid nemo rerum exercitationem voluptatem sunt, temporibus numquam voluptas itaque doloremque sapiente distinctio in repellat magnam totam sed. Soluta molestias, neque itaque
+                    suscipit fugit quam ipsam amet, illum distinctio veritatis nihil quos.</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-11</h2>
+                <h3>Price:1100</h3>
+                <p>In modi quos mollitia, fuga ducimus inventore fugiat consequuntur alias repellat? Quos non inventore assumenda sunt rem itaque. Unde nesciunt modi fuga, a ratione enim esse iure ex asperiores explicabo magnam. Odio, repellat! Temporibus
+                    adipisci ipsa obcaecati at fugit quisquam!</p>
+                <button>Order Now</button>
+            </div>
+            <div class="food">
+                <img src="images/healthy-food-png-pic.png" alt="">
+                <h2>item-12</h2>
+                <h3>Price:1200</h3>
+                <p>Ducimus mollitia dicta in qui repellendus ipsum aperiam, reiciendis, nobis odio assumenda officiis! Perspiciatis unde culpa necessitatibus quia modi eos praesentium cupiditate fugit at dolorum quos, ipsum magni quidem id libero excepturi
+                    nulla molestiae harum, cum quam? Minus, voluptatibus ab?</p>
+                <button>Order Now</button>
+            </div>
+        </div>
+    </section>
+
+
+
+</body>
+
+</html>
