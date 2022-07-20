@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/967a678206.js" crossorigin="anonymous"></script>
+    <title>Login Form With Navbar</title>
+</head>
+
+<style>
+    .login-form {
+        display: flex;
+        flex-direction: column;
+        width: 50%;
+    }
+    
+    form input {
+        font-size: 30px;
+        margin-top: 10px;
+        padding-left: 10px;
+        border-radius: 10px;
+    }
+    
+    form input[type="submit"] {
+        border: 0;
+        background-color: rosybrown;
+        text-align: center;
+        padding: 5px 0;
+    }
+    
+    .login-container {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+    }
+    
+    nav a {
+        text-decoration: none;
+        margin-right: 20px;
+        font-size: 24px;
+        font-weight: 700;
+        color: black;
+    }
+    
+    .nav-container {
+        display: flex;
+        justify-content: space-between;
+    }
+</style>
+
+<body>
+
+    <header>
+        <nav class=nav-container>
+            <span>
+                <a href="">Home</a>
+                <a href="">About</a>
+                <a href="">Contact</a>
+            </span>
+            <span> <a href=""><i class="fa-solid fa-user"></i></a>
+                <a href=""><i class="fa-solid fa-arrow-right-to-bracket"></i></a></span>
+
+        </nav>
+    </header>
+
+    <section class="login-container">
+        <form action="" class="login-form">
+            <h2>Please Login</h2>
+            <input type="email" name="" id="" placeholder="Your Email" required>
+            <input type="password" name="" id="" placeholder="password" required>
+            <input type="submit" value="Login">
+        </form>
+    </section>
+
+
+
+</body>
+
+</html>
